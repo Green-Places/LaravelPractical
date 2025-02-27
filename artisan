@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+// Minimal artisan stub for the take-home assignment.
+// Only the 'serve' command is supported.
+function generateKey() {
+    $bytes = random_bytes(32);
+    $key = 'base64:' . base64_encode($bytes);
+    return $key;
+}
+
+if ($argc > 1) {
+    if ($argv[1] === 'serve') {
+        echo "Starting PHP built-in server at http://localhost:8000\n";
+        passthru("php -S localhost:8000 -t public");
+        exit;
+    }
+    
+    if ($argv[1] === 'key:generate') {
+        $newKey = generateKey();
+        echo "Generated key: $newKey\n";
+        // Optionally, you could update the .env file here with the new key.
+        exit;
+    }
+}
+echo "This is a minimal artisan stub. Only the 'serve' command is supported.\n";

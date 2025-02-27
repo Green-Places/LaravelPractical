@@ -1,0 +1,8 @@
+{
+    "name": "greenplaces/senior-engineer-takehome",
+    "description": "Starter Laravel application for the take-home practical.",
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^8.0"
+    }
+}

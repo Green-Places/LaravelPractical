@@ -1,0 +1,10 @@
+{
+    "name": "senior-engineer-takehome",
+    "private": true,
+    "scripts": {
+        "dev": "tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.0"
+    }
+}
