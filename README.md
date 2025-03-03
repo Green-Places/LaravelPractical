@@ -24,42 +24,42 @@ This assignment evaluates your skills with Laravel, Blade, Livewire, Alpine.js, 
 ## Project Installation Instructions
 
 1. **Clone the repository:**
-    \`\`\`bash
+    ```bash
     git clone <repo_url>
     cd senior-engineer-takehome
-    \`\`\`
+    ```
 
 2. **Install Composer dependencies:**
-    \`\`\`bash
+    ```bash
     composer install
-    \`\`\`
+    ```
 
 3. **Install NPM dependencies:**
-    \`\`\`bash
+    ```bash
     npm install
-    \`\`\`
+    ```
 
 4. **Compile assets:**
-    \`\`\`bash
+    ```bash
     npm run dev
-    \`\`\`
+    ```
 
 5. **Environment Setup:**
     - Copy the example environment file:
-        \`\`\`bash
+        ```bash
         cp .env.example .env
-        \`\`\`
+        ```
     - Generate the application key:
-        \`\`\`bash
+        ```bash
         php artisan key:generate
-        \`\`\`
+        ```
 
 6. **Serve the application locally:**
-    \`\`\`bash
+    ```bash
     php artisan serve
-    \`\`\`
+    ```
 
-7. **Open your browser** and navigate to \`http://localhost:8000\` to see the unstyled starter page.
+7. **Open your browser** and navigate to `http://localhost:8000` to see the unstyled starter page.
 
 ## Assignment 1: Styling the Front End with Tailwind CSS
 
@@ -70,8 +70,8 @@ Improve the provided Blade view(s) by incorporating Tailwind CSS to create a mod
 - **Integrate Tailwind CSS:**  
   You may choose to add Tailwind via CDN (for quick setup) or integrate it into your build process using NPM and PostCSS.
 - **Style the Blade Template:**  
-  Update \`resources/views/welcome.blade.php\` (and any other view if needed) to include:
-  - A responsive navigation bar with a link to the application home and an external link to google.com.
+  Update `resources/views/welcome.blade.php` (and any other view if needed) to include:
+  - A responsive navigation bar with a link to the application home and an external link to `https://google.com`.
   - A visually appealing content area. This is a weather dashboard. We know you are not a designer, but just provide the basics of a UI for a weather dashboard based off of your instincts.
   - A footer with social media icons and a copyright year 
   - Mobile-first responsive design adjustments
@@ -91,7 +91,7 @@ Implement an object-oriented PHP service that fetches weather data from a public
   - Utilize the free forecast api at https://open-meteo.com/en/docs to create access to a weather API. This open source API provided up to 10K calls per day, which should be far more than needed to complete the project. 
 - **Create a Service Class:**  
   - Create a new services directory in the application. 
-  - Write an object-oriented PHP class (e.g., \`ApiService.php\`) that handles:
+  - Write an object-oriented PHP class (e.g., `ApiService.php`) that handles:
       - Making HTTP requests to the API.
       - Parsing the JSON response.
       - Handling potential errors gracefully.
@@ -113,7 +113,7 @@ Add a dynamic feature to the application using Laravel Livewire, demonstrating r
 - **Livewire Setup:**  
   - Install and configure Livewire in the project.
 - **Develop a Livewire Component:**  
-  - Create a Livewire component (e.g., \`WeatherSearchComponent\`) in the appropriate directory.
+  - Create a Livewire component (e.g., `WeatherSearchComponent`) in the appropriate directory.
   - This component should include:
       - An input field (or dropdown) where users can enter or select a city.
       - A "Search" button (or live update as the user types) that triggers an action.
@@ -134,7 +134,7 @@ An interactive weather dashboard where users can enter a city name and see the p
 
 - **Time Limit:** 24 hours from the time you receive this assignment.
 - **Commit Often:** Please commit your progress with clear, descriptive commit messages.
-- **Documentation:** Include any assumptions, additional instructions, or setup details in a \`NOTES.md\` file.
+- **Documentation:** Include any assumptions, additional instructions, or setup details in a `NOTES.md` file.
 - **Final Submission:** Provide us with access to your repository URL upon completion.
 
 ## Notes
